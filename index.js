@@ -29,6 +29,12 @@ function register() {
   Handlebars.registerPartial('recipeFormPartial', document.getElementById('recipe-form-partial').innerHTML)
 }
 
+function displayEditForm() {
+  const template = Handlebars.compile(recipeFormTemplate)
+  const html = template({onsubmit: 'updateRecipe()'})
+  main.innerHTML = html
+}
+
 document.addEventListener("DOMContentLoaded", function(event) {
   init()
 })
