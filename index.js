@@ -16,3 +16,7 @@ Handlebars.registerPartial('recipeDetailsPartial', document.getElementById('reci
 document.addEventListener("DOMContentLoaded", function(event) {
   init()
 })
+
+function createRecipe() {
+
+}
