@@ -12,7 +12,7 @@
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
 
     <script id="recipe-form-template" type="text/x-handlebars-template">
-      <form id="recipe-form" onsubmit='{{ submitAction }};return false'>
+      <form id="recipe-form" onsubmit='{{ onsubmit }};return false'>
         {{> recipeFormPartial }}
       </form>
     </script>
