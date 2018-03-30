@@ -11,7 +11,7 @@ function init() {
 
 function createRecipe() {
   recipe = {
-    name: gei('name').value,
+    name: document.getElementById('name').value,
     description: document.getElementById('description').value,
     ingredients: document.getElementsByName('ingredients').values()
   }
