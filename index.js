@@ -14,5 +14,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
 })
 
 Handlebars.registerHelper('displayIngredient', function(ingredient) {
-  return new Handlebars.SafeString(`<li> ${ ingredient} </li>`)
+  return new Handlebars.SafeString(`<li> ${ingredient} </li>`)
 })
