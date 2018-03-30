@@ -18,8 +18,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
   init()
 })
 
-const gei = document.getElementById
-const gen = document.getElementsByName
+function gei(id) {
+  document.getElementById(id)
+}
+function gen(name) {
+  document.getElementsByName(name)
+}
 
 function createRecipe() {
   recipe = {
