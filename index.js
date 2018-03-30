@@ -10,6 +10,8 @@ function init() {
 }
 
 function createRecipe() {
+  let inodes = document.getElementsByName('ingredients')
+  let ingredients = ((inodes.length > 0) ? inodes.values() : [])
   recipe = {
     name: document.getElementById('name').value,
     description: document.getElementById('description').value,
