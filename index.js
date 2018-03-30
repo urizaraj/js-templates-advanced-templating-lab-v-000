@@ -7,7 +7,7 @@ function init() {
   main.innerHTML = html
 }
 
-Handlebars.registerPartial('recipePartial', document.getElementById('recipe-details-partial').innerHTML)
+Handlebars.registerPartial('recipeDetailsPartial', document.getElementById('recipe-details-partial').innerHTML)
 
 document.addEventListener("DOMContentLoaded", function(event) {
   init()
