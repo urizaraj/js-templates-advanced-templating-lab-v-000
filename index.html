@@ -8,6 +8,12 @@
   </head>
   <body>
     <main id="main">
+
+    </main>
+    <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
+    <script src="index.js"></script>
+
+    <script id="recipe-form-template" type="text/x-handlebars-template">
       <form id="recipe-form" onsubmit='{{ submit }};return false' method="post">
         <input type="text" name="recipeName">
         <input type="text" name="description">
@@ -17,12 +23,6 @@
         <input type="text" name="ingredient">
         <input type="text" name="ingredient">
       </form>
-    </main>
-    <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
-    <script src="index.js"></script>
-
-    <script id="recipe-form-template" type="text/x-handlebars-template">
-
     </script>
     <!-- Open this file and call `mocha.run()` in console to run tests -->
     <div id="mocha"></div>
