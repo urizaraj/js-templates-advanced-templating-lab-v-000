@@ -11,7 +11,7 @@ function init() {
 
 function createRecipe() {
   let inodes = document.getElementsByName('ingredients')
-  console.log(inodes.values())
+  console.log(inodes)
   let ingredients = inodes.values()
   recipe = {
     name: document.getElementById('name').value,
