@@ -2,11 +2,8 @@ const recipeFormTemplate = document.getElementById('recipe-form-template').inner
 const main = document.getElementById('main')
 
 function init() {
-  console.log('this worked')
   const template = Handlebars.compile(recipeFormTemplate)
   const html = template()
-  console.log(template)
-  console.log(html)
   main.innerHTML = html
 }
 
