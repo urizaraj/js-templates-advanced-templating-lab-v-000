@@ -5,6 +5,7 @@ const recipeTemplate = document.getElementById('recipe-template').innerHTML
 
 
 function init() {
+  register()
   const template = Handlebars.compile(recipeFormTemplate)
   const html = template()
   main.innerHTML = html
