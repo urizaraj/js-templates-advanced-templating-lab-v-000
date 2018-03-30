@@ -22,9 +22,11 @@ const gei = document.getElementById
 const gen = document.getElementsByName
 
 function createRecipe() {
-  let name = gei('name').value
-  let description = gei('description').value
-  let ingredients = gen('ingredients').values()
+  recipe = {
+    name: gei('name').value,
+    description: gei('description').value,
+    ingredients: gen('ingredients').values()
+  }
 
 
 }
