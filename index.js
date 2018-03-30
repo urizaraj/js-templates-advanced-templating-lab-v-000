@@ -1,5 +1,6 @@
 const recipeFormTemplate = document.getElementById('recipe-form-template').innerHTML
 const main = document.getElementById('main')
+const recipeTemplate = document.getElementById('recipe-template').innerHTML
 
 Handlebars.registerHelper('displayIngredient', function(ingredient) {
   return new Handlebars.SafeString(`<li> ${ingredient} </li>`)
