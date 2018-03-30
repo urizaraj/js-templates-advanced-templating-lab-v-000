@@ -26,7 +26,7 @@ Handlebars.registerPartial('recipeDetailsPartial', document.getElementById('reci
 
 
 function createRecipe() {
-  console.log(document)
+  console.log(document.getElementById('name'))
   recipe = {
     name: gei('name').value,
     description: gei('description').value,
