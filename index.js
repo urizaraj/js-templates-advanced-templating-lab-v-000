@@ -21,9 +21,7 @@ function init() {
 
 Handlebars.registerPartial('recipeDetailsPartial', document.getElementById('recipe-details-partial').innerHTML)
 
-document.addEventListener("DOMContentLoaded", function(event) {
-  init()
-})
+
 
 
 
@@ -38,3 +36,14 @@ function createRecipe() {
   const html = template(recipe)
   main.innerHTML = html
 }
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  init()
+})
