@@ -19,7 +19,7 @@ function createRecipe() {
     ingredients: ingredients
   }
 
-  template = Handlebars.compile(recipeTemplate)
+  let template = Handlebars.compile(recipeTemplate)
   const html = template(recipe)
   main.innerHTML = html
 }
