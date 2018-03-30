@@ -14,16 +14,11 @@ function init() {
 
 Handlebars.registerPartial('recipeDetailsPartial', document.getElementById('recipe-details-partial').innerHTML)
 
-
-
-
-
 function createRecipe() {
-  console.log(document.getElementById('name'))
   recipe = {
-    name: gei('name').value,
-    description: gei('description').value,
-    ingredients: gen('ingredients').values()
+    name: document.getElementById('name').value,
+    description: document.getElementById('description').value,
+    ingredients: document.getElementsByName('ingredients').values()
   }
 
   template = Handlebars.compile(recipeTemplate)
