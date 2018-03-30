@@ -14,7 +14,7 @@ function init() {
 
 Handlebars.registerPartial('recipeDetailsPartial', document.getElementById('recipe-details-partial').innerHTML)
 
-const gei = document.getElementById
+const gei = document.getElementById.bind(document)
 
 function createRecipe() {
   recipe = {
