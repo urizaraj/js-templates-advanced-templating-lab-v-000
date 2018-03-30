@@ -10,9 +10,9 @@ function init() {
 }
 
 function createRecipe() {
-  let inodes = document.getElementsByName('ingredients')
+  let nodes = document.getElementsByName('ingredients')
   console.log(inodes)
-  let ingredients = inodes.values()
+  let ingredients = nodes.values()
   recipe = {
     name: document.getElementById('name').value,
     description: document.getElementById('description').value,
