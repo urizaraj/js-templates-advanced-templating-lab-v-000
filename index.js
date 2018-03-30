@@ -2,15 +2,12 @@ const recipeFormTemplate = document.getElementById('recipe-form-template').inner
 const main = document.getElementById('main')
 const recipeTemplate = document.getElementById('recipe-template').innerHTML
 
-
-
 function init() {
   register()
   const template = Handlebars.compile(recipeFormTemplate)
   const html = template()
   main.innerHTML = html
 }
-
 
 function createRecipe() {
   recipe = {
