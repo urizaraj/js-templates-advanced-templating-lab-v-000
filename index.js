@@ -38,6 +38,19 @@ function displayEditForm() {
   main.innerHTML = html
 }
 
+function updateRecipe() {
+  let ingredients = []
+  let recipe = {
+    name: document.getElementById('name').value,
+    description: document.getElementById('description').value,
+    ingredients: ingredients
+  }
+
+  let template = Handlebars.compile(recipeTemplate)
+  const html = template(recipe)
+  main.innerHTML = html
+}
+
 document.addEventListener("DOMContentLoaded", function(event) {
   init()
 })
