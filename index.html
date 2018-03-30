@@ -34,7 +34,7 @@
       <p>{{description}}</p>
       <ul>
         {{#each ingredients}}
-        <li>{{name}}</li>
+        {{ displayIngredient this }}
         {{/each}}
       </ul>
     </script>
