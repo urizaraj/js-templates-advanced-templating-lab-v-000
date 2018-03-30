@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 })
 
 const gei = document.getElementById
+const gen = document.getElementsByName
 
 function createRecipe() {
   let name = gei('name').value
