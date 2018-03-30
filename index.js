@@ -12,7 +12,8 @@ function init() {
 function createRecipe() {
   let nodes = document.getElementsByName('ingredients')
   console.log(inodes)
-  let ingredients = nodes.values()
+  let ingredients = []
+  nodes.forEach(i => ingredients.push(i.value))
   recipe = {
     name: document.getElementById('name').value,
     description: document.getElementById('description').value,
