@@ -2,9 +2,7 @@ const recipeFormTemplate = document.getElementById('recipe-form-template').inner
 const main = document.getElementById('main')
 const recipeTemplate = document.getElementById('recipe-template').innerHTML
 
-Handlebars.registerHelper('displayIngredient', function(ingredient) {
-  return new Handlebars.SafeString(`<li> ${ingredient} </li>`)
-})
+
 
 function init() {
   const template = Handlebars.compile(recipeFormTemplate)
@@ -12,7 +10,6 @@ function init() {
   main.innerHTML = html
 }
 
-Handlebars.registerPartial('recipeDetailsPartial', document.getElementById('recipe-details-partial').innerHTML)
 
 function createRecipe() {
   recipe = {
@@ -26,6 +23,12 @@ function createRecipe() {
   main.innerHTML = html
 }
 
+function register() {
+  Handlebars.registerHelper('displayIngredient', function(ingredient) {
+    return new Handlebars.SafeString(`<li> ${ingredient} </li>`)
+  })
+  Handlebars.registerPartial('recipeDetailsPartial', document.getElementById('recipe-details-partial').innerHTML)
+}
 
 document.addEventListener("DOMContentLoaded", function(event) {
   init()
