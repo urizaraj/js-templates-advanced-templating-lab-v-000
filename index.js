@@ -2,13 +2,6 @@ const recipeFormTemplate = document.getElementById('recipe-form-template').inner
 const main = document.getElementById('main')
 const recipeTemplate = document.getElementById('recipe-template').innerHTML
 
-function gei(id) {
-  document.getElementById(id)
-}
-function gen(name) {
-  document.getElementsByName(name)
-}
-
 Handlebars.registerHelper('displayIngredient', function(ingredient) {
   return new Handlebars.SafeString(`<li> ${ingredient} </li>`)
 })
