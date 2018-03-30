@@ -15,7 +15,7 @@ function createRecipe() {
   recipe = {
     name: document.getElementById('name').value,
     description: document.getElementById('description').value,
-    ingredients: document.getElementsByName('ingredients').values()
+    ingredients: ingredients
   }
 
   template = Handlebars.compile(recipeTemplate)
