@@ -12,7 +12,7 @@ function init() {
 function createRecipe() {
   let inodes = document.getElementsByName('ingredients')
   console.log(inodes.values())
-  let ingredients = (inodes ? inodes.map(node => node.value) : [])
+  let ingredients = inodes.values()
   recipe = {
     name: document.getElementById('name').value,
     description: document.getElementById('description').value,
