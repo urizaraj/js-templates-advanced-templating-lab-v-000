@@ -24,5 +24,7 @@ const gen = document.getElementsByName
 function createRecipe() {
   let name = gei('name').value
   let description = gei('description').value
-  let ingredients = gen('ingredients')
+  let ingredients = gen('ingredients').values()
+
+
 }
