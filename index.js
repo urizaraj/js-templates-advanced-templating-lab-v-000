@@ -28,5 +28,7 @@ function createRecipe() {
     ingredients: gen('ingredients').values()
   }
 
-
+  template = Handlebars.compile(recipeTemplate)
+  const html = template(recipe)
+  main.innerHTML = html
 }
